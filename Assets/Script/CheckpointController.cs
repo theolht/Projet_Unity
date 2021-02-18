@@ -8,7 +8,7 @@ public class CheckpointController : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger Called");
+        //Debug.Log("Trigger Called");
         GameObject Player = GameObject.Find("Player");
         PlayerController playerScript = Player.GetComponent<PlayerController>();
         if(other.tag == "Player")

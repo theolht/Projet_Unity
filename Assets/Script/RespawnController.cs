@@ -11,7 +11,7 @@ public class RespawnController : MonoBehaviour
         PlayerController playerScript = Player.GetComponent<PlayerController>();
         if(other.tag == "Player")
         {
-            Debug.Log("Player Recognised");
+            //Debug.Log("Player Recognised");
             playerScript.PlayerRigidbody.MovePosition(playerScript.respawnPoint);
         }
     }
