@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheckpointController : MonoBehaviour
 {
     [SerializeField] private Transform respawnPointTransform;
+    private bool isPlayed = false;
     
     void OnTriggerEnter(Collider other)
     {
@@ -15,6 +16,11 @@ public class CheckpointController : MonoBehaviour
         {
             //Debug.Log("Player Recognised");
             playerScript.respawnPoint = respawnPointTransform.position;
+            if (!isPlayed)
+            {
+                GetComponent<AudioSource>().Play();
+                isPlayed = true;
+            }
         }
     }
 }

@@ -13,6 +13,7 @@ public class RespawnController : MonoBehaviour
         {
             //Debug.Log("Player Recognised");
             playerScript.PlayerRigidbody.MovePosition(playerScript.respawnPoint);
+            GetComponent<AudioSource>().Play();
         }
     }
 }
