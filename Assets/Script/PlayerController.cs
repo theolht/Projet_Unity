@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
 
     private float camSpeed = 0.5f;
     private float camSens = 0.5f;
-    private float playerSpeed = 0.1f;
-    private float jumpHeight = 2.0f;
+    private float playerSpeed = 0.015f;
+    private float jumpHeight = 5.0f;
     private float bulletSpeed = 3000f;
 
     public Vector3 respawnPoint;
