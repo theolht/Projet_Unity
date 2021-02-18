@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
                 Vector3 jump = new Vector3(0.0f, 2.0f, 0.0f);
                 playerRigidbody.GetComponent<Rigidbody>().AddForce(jump * jumpHeight, ForceMode.Impulse);
                 counterJump++;
-                Debug.Log("jump !");
+                //Debug.Log("jump !");
             }
         }
     }
