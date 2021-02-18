@@ -185,6 +185,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8823621144162692398, guid: 801da5930e1f7864b80392ea5c83f5f6, type: 3}
   m_PrefabInstance: {fileID: 68287487}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &447476136 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8805181952221960899, guid: 024ed59576bac37409353b624fdfd3b4, type: 3}
+  m_PrefabInstance: {fileID: 711418471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +290,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -241205111583799092, guid: 024ed59576bac37409353b624fdfd3b4, type: 3}
+      propertyPath: respawnPointTransform
+      value: 
+      objectReference: {fileID: 447476136}
     - target: {fileID: 830326663650287753, guid: 024ed59576bac37409353b624fdfd3b4, type: 3}
       propertyPath: m_Name
       value: PlatformCheckpoint

@@ -6,7 +6,7 @@ public class CheckpointController : MonoBehaviour
 {
     [SerializeField] private Transform respawnPointTransform;
     
-    void OnTrigger(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger Called");
         GameObject Player = GameObject.Find("Player");
