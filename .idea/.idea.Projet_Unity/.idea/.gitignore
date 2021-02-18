@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.Projet_Unity.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../../:\Users\theol\Documents\M1\Programmation 3D\Projet\Projet_Unity\.idea\.idea.Projet_Unity\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

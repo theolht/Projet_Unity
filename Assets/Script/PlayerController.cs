@@ -11,13 +11,16 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float camSpeed = 0.5f;
     [SerializeField] private float camSens = 0.5f;
-    [SerializeField] private float playerSpeed = 0.05f;
+    [SerializeField] private float playerSpeed = 0.01f;
     [SerializeField] private float jumpHeight = 2.0f;
     [SerializeField] private float bulletSpeed = 3000f;
+
+    public Vector3 respawnPoint;
 
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        respawnPoint = new Vector3(0.0f, 1.0f, 0.0f);
     }
 
     void Update()
