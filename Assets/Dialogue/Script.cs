@@ -8,7 +8,7 @@ public class Script : MonoBehaviour
     public Dialogue dialogue;
     public Titre titre;
 
-    
+    [SerializeField] private GameObject textBox;
     int index = 0;
     [SerializeField]  private TextMeshProUGUI dialogueTextComponant;
     [SerializeField]  private TextMeshProUGUI TitreTextComponant;
@@ -21,7 +21,8 @@ public class Script : MonoBehaviour
         }
         else
         {
-            
+            textBox.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
         }
         
     }

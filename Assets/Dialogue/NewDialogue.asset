@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901b612e0db33914fa4351f61c9ec3eb, type: 3}
   m_Name: NewDialogue
   m_EditorClassIdentifier: 
-  phrases: []
+  phrases:
+  - "Utilisez Z,Q,S,D pour vous d\xE9placer"
+  - Atteignez la fin du niveau sans tomber !
+  - Bon courrage !

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a4f9db7101cd34cbb98d1fab68d983, type: 3}
   m_Name: NewTitle
   m_EditorClassIdentifier: 
-  Title: 
+  Title: Progression
