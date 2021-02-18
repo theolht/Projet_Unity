@@ -75,7 +75,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            GameObject bullet = (GameObject) Instantiate(Resources.Load("Bullet"),BulletSpawnerTransform.position,Quaternion.identity);
+            Debug.Log(cameraTransform.rotation);
+            Vector3 rot = cameraTransform.rotation.eulerAngles;
+            rot = new Vector3(rot.x,rot.y-90,rot.z);
+            //cameraTransform.rotation = Quaternion.Euler(rot);
+            Debug.Log(cameraTransform.rotation);
+            GameObject bullet = (GameObject) Instantiate(Resources.Load("Bullet"),BulletSpawnerTransform.position,Quaternion.Euler(rot));
             bullet.GetComponent<Rigidbody>().AddForce(cameraTransform.forward * bulletSpeed);
         }
     }
