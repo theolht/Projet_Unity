@@ -350,7 +350,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 826287911}
         m_TargetAssemblyTypeName: Script, Assembly-CSharp
         m_MethodName: HandleClick
         m_Mode: 1
@@ -1516,6 +1516,7 @@ MonoBehaviour:
   jumpHeight: 2
   bulletSpeed: 3000
   respawnPoint: {x: 0, y: 1, z: 0}
+  counterJump: 0
 --- !u!1 &2049639542
 GameObject:
   m_ObjectHideFlags: 0
