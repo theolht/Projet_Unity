@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float bulletSpeed = 3000f;
 
     public Vector3 respawnPoint;
+    public int counterJump = 0;
 
     void Awake()
     {
@@ -53,14 +55,19 @@ public class PlayerController : MonoBehaviour
         pitch += pitch * camSpeed;
         cameraTransform.localEulerAngles += new Vector3(pitch, yawn, 0f);
     }
-
+    
     private void PlayerJump()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //Debug.Log("Function called");
-            Vector3 jump = new Vector3(0.0f, 2.0f, 0.0f);
-            playerRigidbody.GetComponent<Rigidbody>().AddForce(jump * jumpHeight, ForceMode.Impulse);
+            if (counterJump < 2)
+            {
+                //Debug.Log("Function called");
+                Vector3 jump = new Vector3(0.0f, 2.0f, 0.0f);
+                playerRigidbody.GetComponent<Rigidbody>().AddForce(jump * jumpHeight, ForceMode.Impulse);
+                counterJump++;
+                Debug.Log("jump !");
+            }
         }
     }
     
