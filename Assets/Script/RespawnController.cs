@@ -12,7 +12,7 @@ public class RespawnController : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("Player Recognised");
-            playerScript.playerRigidbody.MovePosition(playerScript.respawnPoint);
+            playerScript.PlayerRigidbody.MovePosition(playerScript.respawnPoint);
         }
     }
 }

@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] public Rigidbody playerRigidbody;
+    [SerializeField] private Rigidbody playerRigidbody;
+    public Rigidbody PlayerRigidbody => playerRigidbody;
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private Transform BulletSpawnerTransform;
 
     [SerializeField] private float camSpeed = 0.5f;
     [SerializeField] private float camSens = 0.5f;
-    [SerializeField] private float playerSpeed = 0.05f;
+    [SerializeField] private float playerSpeed = 0.01f;
     [SerializeField] private float jumpHeight = 2.0f;
     [SerializeField] private float bulletSpeed = 3000f;
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    
     void Update()
     {
         StartCoroutine(DestroyIn3Second());
