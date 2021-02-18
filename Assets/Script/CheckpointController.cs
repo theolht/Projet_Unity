@@ -12,7 +12,13 @@ public class CheckpointController : MonoBehaviour
         if(other.tag == "Player")
         {
             //Debug.Log("Player Recognised");
-            playerScript.respawnPoint = ;
+            playerScript.respawnPoint = new Vector3(0,0,0);
+        }
+        
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit))
+        {
+            Debug.Log("Point of contact: "+hit.point);
         }
     }
 }
