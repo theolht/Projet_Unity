@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         respawnPoint = new Vector3(0.0f, 1.0f, 0.0f);
     }
 
