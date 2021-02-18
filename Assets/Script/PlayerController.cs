@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody playerRigidbody;
+    [SerializeField] public Rigidbody playerRigidbody;
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private Transform BulletSpawnerTransform;
 
