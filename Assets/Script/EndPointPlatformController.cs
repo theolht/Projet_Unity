@@ -14,10 +14,15 @@ public class EndPointPlatformController : MonoBehaviour
     {
         GameObject Player = GameObject.Find("Player");
         PlayerController playerScript = Player.GetComponent<PlayerController>();
+        
+        GameObject Timer = GameObject.Find("Timer");
+        UITimer timerScript = Player.GetComponent<UITimer>();
+        
         if (other.tag == "Player")
         {
             GetComponent<AudioSource>().Play();
             playerScript.PlayerRigidbody.MovePosition(new Vector3(0f,1f,0f));
+            timerScript.Timer = 0f;
         }
     }
 }

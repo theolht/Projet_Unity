@@ -5,7 +5,7 @@ public class UITimer : MonoBehaviour
 {	
     public Text TimerText; 
     public bool playing;
-    private float Timer;
+    public float Timer;
 
     void Update () {
 
