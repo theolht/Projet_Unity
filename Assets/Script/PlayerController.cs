@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     private float camSpeed = 0.5f;
     private float camSens = 0.5f;
-    private float playerSpeed = 0.05f;
+    private float playerSpeed = 0.02f;
     private float jumpHeight = 5.0f;
     private float bulletSpeed = 3000f;
 
